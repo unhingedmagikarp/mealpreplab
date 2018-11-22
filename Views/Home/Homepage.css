@@ -1,0 +1,6 @@
+.fill {
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../assets/img/food.jpg");
+}

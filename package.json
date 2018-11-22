@@ -1,0 +1,26 @@
+{
+  "name": "mealpreplab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peter-keller/mealpreplab.git"
+  },
+  "author": "Peter Keller",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peter-keller/mealpreplab/issues"
+  },
+  "homepage": "https://github.com/peter-keller/mealpreplab#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.13",
+    "morgan": "^1.9.1",
+    "pug": "^2.0.3"
+  }
+}
