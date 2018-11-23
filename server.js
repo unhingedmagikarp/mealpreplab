@@ -8,11 +8,6 @@ const app = express();
 
 app.use(morgan("dev"));
 
-// Pug js
-app.set("views", path.join(__dirname, "views"));
-app.use(express.static("views"));
-app.set("view engine", "pug");
-
 require("./app/routes.js")(app);
 
 app.listen(port);

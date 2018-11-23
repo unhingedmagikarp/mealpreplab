@@ -3,16 +3,22 @@ import AppNavbar from "./Components/Navbar/Navbar";
 import HomeContent from "./Components/Home/HomeContent";
 import FooterItem from "./Components/Footer/Footer";
 
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+
 import "./Assets/bootstrap/css/bootstrap.min.css";
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <AppNavbar />
-        <HomeContent />
-        <FooterItem />
-      </div>
+      <BrowserRouter>
+        <React.Fragment>
+          <AppNavbar />
+          <Switch>
+            <Route path="/" component={HomeContent} exact />
+          </Switch>
+          <FooterItem />
+        </React.Fragment>
+      </BrowserRouter>
     );
   }
 }
