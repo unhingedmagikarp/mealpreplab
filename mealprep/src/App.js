@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import AppNavbar from "./Components/Navbar/Navbar";
-import HomePicture from "./Components/Home/HomePicture";
 import HomeContent from "./Components/Home/HomeContent";
+import FooterItem from "./Components/Footer/Footer";
 
 import "./Assets/bootstrap/css/bootstrap.min.css";
 
@@ -10,8 +10,8 @@ class App extends Component {
     return (
       <div>
         <AppNavbar />
-        <HomePicture />
         <HomeContent />
+        <FooterItem />
       </div>
     );
   }

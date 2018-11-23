@@ -1,5 +1,6 @@
 import React from "react";
 import ImageSection from "./ImageSection";
+import HomePicture from "./HomePicture";
 import FirstImage from "../../Assets/img/01.jpg";
 import SecondImage from "../../Assets/img/02.jpg";
 import ThirdImage from "../../Assets/img/03.jpg";
@@ -7,6 +8,7 @@ import ThirdImage from "../../Assets/img/03.jpg";
 const HomeContent = () => {
   return (
     <React.Fragment>
+      <HomePicture />
       <ImageSection
         firstClass={"order-lg-2"}
         secondClass={"order-lg-1"}
