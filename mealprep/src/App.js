@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import AppNavbar from "./Components/Navbar/Navbar";
 import HomeContent from "./Components/Home/HomeContent";
 import FooterItem from "./Components/Footer/Footer";
+import CategoryPage from "./Components/Categories/CategoryPage";
 
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
@@ -15,6 +16,7 @@ class App extends Component {
           <AppNavbar />
           <Switch>
             <Route path="/" component={HomeContent} exact />
+            <Route path="/categories" component={CategoryPage} exact />
           </Switch>
           <FooterItem />
         </React.Fragment>
