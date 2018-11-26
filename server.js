@@ -9,5 +9,6 @@ const app = express();
 app.use(morgan("dev"));
 
 require("./app/routes.js")(app);
+require("./app/admin_routes")(app);
 
 app.listen(port);

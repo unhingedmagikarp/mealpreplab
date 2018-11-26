@@ -1,8 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const CategoryItem = props => {
   return (
-    <a
+    <Link
+      to="/"
       className="col-sm-6 col-lg-4"
       href={props.path}
       style={{ textDecoration: "none" }}
@@ -14,7 +16,7 @@ const CategoryItem = props => {
           <p className="card-text">{props.description}</p>
         </div>
       </div>
-    </a>
+    </Link>
   );
 };
 

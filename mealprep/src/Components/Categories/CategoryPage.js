@@ -24,6 +24,21 @@ class CategoryPage extends Component {
               displayImage={LandingPicture}
               description={"For everyone"}
             />
+            <CategoryItem
+              title="Bodybuilder"
+              displayImage={LandingPicture}
+              description={"For everyone"}
+            />
+            <CategoryItem
+              title="Bodybuilder"
+              displayImage={LandingPicture}
+              description={"For everyone"}
+            />
+            <CategoryItem
+              title="Bodybuilder"
+              displayImage={LandingPicture}
+              description={"For everyone"}
+            />
           </div>
         </div>
       </div>
