@@ -4,6 +4,7 @@ import "./Search.css";
 
 class SearchItem extends Component {
   submitForm = e => {
+    e.preventDefault();
     console.log(e.target.value);
   };
 
