@@ -26,27 +26,10 @@ class HomePicture extends Component {
             <h2 className="masthead-subheading mb-0">
               The ultimate food website
             </h2>
-            <h3
-              style={{
-                fontSize: "2rem",
-                marginTop: "1rem",
-                marginBottom: "-1rem"
-              }}
-            >
-              Sign up to our newsletter
-            </h3>
+            <h3 className="signUp">Sign up to our newsletter</h3>
             <form className="text-center" style={{ marginTop: "2rem" }}>
-              <input
-                style={{
-                  backgroundColor: "#fff",
-                  minWidth: "150px",
-                  padding: "20px 20px 20px 20px"
-                }}
-                className="form__input"
-                type="text"
-                name="recipeName"
-              />
-              <button className="btn btn-primary btn-lg rounded-pill">
+              <input className="emailField" type="text" name="recipeName" />
+              <button className="submitButton btn btn-primary btn-lg rounded-pill">
                 Sign up
               </button>
             </form>

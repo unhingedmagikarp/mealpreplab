@@ -9,6 +9,25 @@
   margin-left: auto;
 }
 
+.signUp {
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: -1rem;
+}
+
+.submitButton {
+  border: none !important;
+}
+
+.emailField {
+  margin-right: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  min-width: 250px;
+  padding: 10px 20px 10px 20px;
+  border: none;
+}
+
 @media screen and (max-width: 1200px) {
   .titleContainer {
     width: 85%;
@@ -20,6 +39,10 @@
   .titleContainer {
     width: 85%;
     max-width: 960px;
+  }
+
+  .signUp {
+    font-size: 1.5em;
   }
 }
 
@@ -34,5 +57,9 @@
   .titleContainer {
     width: 100%;
     max-width: 540px;
+  }
+
+  .submitButton {
+    margin-top: 10px;
   }
 }
