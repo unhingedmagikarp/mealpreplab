@@ -5,7 +5,7 @@ const CategoryItem = props => {
   return (
     <Link
       to="/"
-      className="col-sm-6 col-lg-4"
+      className="col-sm-6 col-lg-4 spaceAround"
       href={props.path}
       style={{ textDecoration: "none" }}
     >

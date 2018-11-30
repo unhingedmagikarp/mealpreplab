@@ -2,19 +2,15 @@ import React, { Component } from "react";
 import LandingPicture from "../../Assets/img/cats.jpg";
 import SearchItem from "../Search/SearchItem";
 import CategoryItem from "./CategoryItem";
+import "./Category.css";
 
 class CategoryPage extends Component {
   render() {
     return (
       <div className="container" style={{ marginTop: "125px" }}>
         <SearchItem />
-        <div
-          className="block-heading"
-          style={{ marginBottom: "75px", marginTop: "50px" }}
-        >
-          <h1 className="text-center" style={{ color: "#ee0979" }}>
-            Categories
-          </h1>
+        <div className="block-heading pageTitle">
+          <h1 className="text-center textColor">Categories</h1>
         </div>
 
         <div style={{ minHeight: "800px" }}>
