@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Form, Input, Button } from "reactstrap";
+import { Form } from "reactstrap";
 import "./Search.css";
 
 class SearchItem extends Component {

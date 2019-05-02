@@ -1,0 +1,36 @@
+{
+  "signups": [
+    {
+      "signups": "keller.f.peter@gmail.com",
+      "id": 1
+    },
+    {
+      "signups": "keller.f.peter@gmail.com",
+      "id": 2
+    },
+    {
+      "signups": "keller.f.peter@gmail.com",
+      "id": 3
+    },
+    {
+      "signups": "keller.f.peter@gmail.com",
+      "id": 4
+    },
+    {
+      "signups": "asd",
+      "id": 5
+    },
+    {
+      "signups": "asdfsd",
+      "id": 6
+    },
+    {
+      "signups": "asdasd",
+      "id": 7
+    },
+    {
+      "signups": "dsfafasdf",
+      "id": 8
+    }
+  ]
+}

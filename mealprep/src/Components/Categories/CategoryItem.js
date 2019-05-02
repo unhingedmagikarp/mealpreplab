@@ -10,7 +10,11 @@ const CategoryItem = props => {
       style={{ textDecoration: "none" }}
     >
       <div className="card clean-card text-center">
-        <img src={props.displayImage} className="card-img-top w-100 d-block" />
+        <img
+          src={props.displayImage}
+          className="card-img-top w-100 d-block"
+          alt={props.title}
+        />
         <div className="card-body info">
           <h4 className="card-title">{props.title}</h4>
           <p className="card-text">{props.description}</p>

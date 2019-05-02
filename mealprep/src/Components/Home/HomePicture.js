@@ -10,6 +10,27 @@ class HomePicture extends Component {
     this.state = {};
   }
 
+  handleSubmit = e => {
+    e.preventDefault();
+    console.log(this.state);
+    e.target.reset();
+    this.newSignup();
+  };
+
+  newSignup = () => {
+    axios
+      .post("http://localhost:3004/signups", {
+        signups: this.state.signup
+      })
+      .then(response => {
+        delete this.state.signup;
+        console.log(this.state);
+      })
+      .catch(error => {
+        console.log(error);
+      });
+  };
+
   handleChange = e => {
     this.setState({ [e.target.name]: e.target.value });
   };
@@ -27,8 +48,17 @@ class HomePicture extends Component {
               The ultimate food website
             </h2>
             <h3 className="signUp">Sign up to our newsletter</h3>
-            <form className="text-center" style={{ marginTop: "2rem" }}>
-              <input className="emailField" type="text" name="recipeName" />
+            <form
+              onSubmit={this.handleSubmit}
+              className="text-center"
+              style={{ marginTop: "2rem" }}
+            >
+              <input
+                className="emailField"
+                type="text"
+                name="signup"
+                onChange={this.handleChange}
+              />
               <button className="submitButton btn btn-primary btn-lg rounded-pill">
                 Sign up
               </button>

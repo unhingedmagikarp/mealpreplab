@@ -7,7 +7,11 @@ const ImageSection = props => {
         <div className="row align-items-center">
           <div className={`col-lg-6 ${props.firstClass}`}>
             <div className="p-5">
-              <img className="rounded-circle img-fluid" src={props.imageFile} />
+              <img
+                className="rounded-circle img-fluid"
+                src={props.imageFile}
+                alt={props.title}
+              />
             </div>
           </div>
           <div className={`col-lg-6 ${props.secondClass}`}>

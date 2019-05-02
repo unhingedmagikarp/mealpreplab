@@ -1,10 +1,18 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
+import { fetchCategories } from "../../actions/categoryActions";
+import PropTypes from "prop-types";
+
 import LandingPicture from "../../Assets/img/cats.jpg";
 import SearchItem from "../Search/SearchItem";
 import CategoryItem from "./CategoryItem";
 import "./Category.css";
 
 class CategoryPage extends Component {
+  // componentWillMount() {
+  //   this.props.fetchCategories();
+  // }
+
   render() {
     return (
       <div className="container" style={{ marginTop: "125px" }}>
@@ -42,4 +50,16 @@ class CategoryPage extends Component {
   }
 }
 
-export default CategoryPage;
+// CategoryPage.PropTypes = {
+//   fetchCategories: PropTypes.func.isRequired,
+//   categories: PropTypes.array.isRequired
+// };
+
+const mapStateToProps = state => ({
+  categories: state.categories.items
+});
+
+export default connect(
+  mapStateToProps,
+  { fetchCategories }
+)(CategoryPage);
