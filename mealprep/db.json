@@ -32,5 +32,31 @@
       "signups": "dsfafasdf",
       "id": 8
     }
+  ],
+  "categories": [
+    {
+      "name": "Bodybuilder",
+      "description": "Description",
+      "thumbnail": "../../Assets/img/cats.jpg",
+      "slug": "bodybuilder"
+    },
+    {
+      "name": "Bodybuilder",
+      "description": "Description",
+      "thumbnail": "../../Assets/img/cats.jpg",
+      "slug": "bodybuilder"
+    },
+    {
+      "name": "Bodybuilder",
+      "description": "Description",
+      "thumbnail": "../../Assets/img/cats.jpg",
+      "slug": "bodybuilder"
+    },
+    {
+      "name": "Bodybuilder",
+      "description": "Description",
+      "thumbnail": "../../Assets/img/cats.jpg",
+      "slug": "bodybuilder"
+    }
   ]
 }

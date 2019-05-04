@@ -61,7 +61,7 @@
 }
 
 @media screen and (max-width: 402px) {
-  .submitButton {
+  /* .submitButton {
     margin-top: 1.5rem;
-  }
+  } */
 }

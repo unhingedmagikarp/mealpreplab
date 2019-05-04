@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const CategoryItem = props => {
   return (
     <Link
-      to="/"
+      to={`/categories/${props.path}`}
       className="col-sm-6 col-lg-4 spaceAround"
       href={props.path}
       style={{ textDecoration: "none" }}
